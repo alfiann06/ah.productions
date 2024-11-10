@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirect Follow Instagram</title>
+    <style>
+        body {
+            background-color:white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .button {
+            background-color: #3897f0;
+            color: black;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            display: inline-block;
+            margin-top: 20px;
+        }
+        .button:hover {
+            background-color: #287bb5;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Link Foto</h1>
+    <p>Untuk membuka link ini, Anda harus mengikuti akun Instagram kami terlebih dahulu:</p>
+    <a href="https://www.instagram.com/ah.productions_" target="blank" class="button">Follow Instagram @ah.productions</a>
+    
+    <p>Jika sudah follow, klik tombol di bawah ini:</p>
+    <button class="button" onclick="openLink()">Saya Sudah Follow</button>
+
+    <p id="linkMessage" class="hidden">Terima kasih! Anda sekarang bisa membuka link ini:</p>
+    <a id="specialLink" href="https://drive.google.com/drive/folders/1Tb5GgRYS5TCH4U8knuU-mSpNcAKDTBeE?usp=sharing" target="_blank" class="button hidden">Link Foto</a>
+
+    <script>
+        function openLink() {
+            // Menampilkan pesan dan link setelah user menekan tombol "Saya Sudah Follow"
+            document.getElementById("linkMessage").classList.remove("hidden");
+            document.getElementById("specialLink").classList.remove("hidden");
+        }
+    </script>
+
+</body>
+</html>
